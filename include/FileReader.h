@@ -53,9 +53,6 @@ public:
             res.push_back(tmp);
         }
         return res;
-
-
-        return res;
     }
 
 
