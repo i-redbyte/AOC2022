@@ -2,7 +2,7 @@
 #include <vector>
 #include <map>
 #include <algorithm>
-#include "../include/FileReader.h"
+#include "FileReader.h"
 
 int resultCount(const char &A, const char &B) {
     std::map<std::pair<char, char>, int> map{};
@@ -91,7 +91,7 @@ int part2(std::vector<std::pair<char, char>> readLines) {
 
 int main(int argc, char *argv[]) {
     FileReader fr{};
-    std::vector<std::pair<char, char>> readLines{fr.readPairs("../day2/data3_1.txt")};
+    std::vector<std::pair<char, char>> readLines{fr.readPairs("../cpp/day2/data3_1.txt")};
 
     std::cout << "====== Result: ======" << std::endl;
     std::cout << "Part1: " << part1(readLines) << std::endl;

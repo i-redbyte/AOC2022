@@ -1,6 +1,6 @@
 #include <set>
 #include <iostream>
-#include "../include/FileReader.h"
+#include "FileReader.h"
 
 std::pair<int, int> getBoundaries(std::string line) {
     auto delimiterPos = line.find('-');
@@ -62,7 +62,7 @@ bool part2(const std::set<int> &smallestSet, const std::set<int> &largestSet) {
 
 int main() {
     FileReader fr{};
-    std::vector<std::string> readLines{fr.readLines("../day4/data.txt")};
+    std::vector<std::string> readLines{fr.readLines("../cpp/day4/data.txt")};
     int fullyOverlap{0};
     int anyOverlap{0};
     for (auto &line: readLines) {

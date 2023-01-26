@@ -4,8 +4,8 @@
 #include <algorithm>
 #include <iterator>
 
-#include "../include/FileReader.h"
-#include "../include/Utility.h"
+#include "FileReader.h"
+#include "Utility.h"
 
 int charToInt(const char &ch) {
     if (std::islower(ch)) {
@@ -63,7 +63,7 @@ int part1() {
 
 int part2() {
     FileReader fr;
-    std::vector<std::string> lines = fr.readLines("../day3/data3_1.txt");
+    std::vector<std::string> lines = fr.readLines("../cpp/day3/data3_1.txt");
     std::vector<std::set<char>> elves{};
 
     for (auto line: lines) {

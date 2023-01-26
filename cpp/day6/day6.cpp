@@ -1,7 +1,7 @@
 #include <set>
 #include <vector>
 #include <iostream>
-#include "../include/FileReader.h"
+#include "FileReader.h"
 
 bool isCharSeen(const char &ch, const std::set<char> &set) {
     return (set.count(ch) != 0);
@@ -33,7 +33,7 @@ int solution(const std::string &line, int charCnt) {
 
 int main() {
     FileReader fr;
-    std::vector<std::string> readLines{fr.readLines("../day6/data.txt")};
+    std::vector<std::string> readLines{fr.readLines("../cpp/day6/data.txt")};
     auto line = readLines[0];
     assert(solution(line, 4) == 1140);
     assert(solution(line, 14) == 3495);

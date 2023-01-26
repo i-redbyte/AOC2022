@@ -8,7 +8,7 @@ namespace fs = std::__fs::filesystem;
 int main() {
     fs::path p = fs::current_path();
     std::cout << p << std::endl;
-    std::ifstream day1("../day1/data3_1.txt");
+    std::ifstream day1("../cpp/day1/data3_1.txt");
     std::string s;
     long int sum, elf1, elf2, elf3;
     elf1 = 0;

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "../include/FileReader.h"
+#include "FileReader.h"
 
 std::string part1(const std::vector<std::string> &input);
 
@@ -88,7 +88,7 @@ struct Boxes {
 
 int main() {
     FileReader fr{};
-    std::vector<std::string> readLines{fr.readLines("../day5/data.txt")};
+    std::vector<std::string> readLines{fr.readLines("../cpp/day5/data.txt")};
     std::cout << part1(readLines) << std::endl;
     std::cout << part2(readLines) << std::endl;
 }
