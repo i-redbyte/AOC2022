@@ -5,4 +5,4 @@ My solutions to AOK 2022 tasks in different programming languages
 Solved tasks and languages:
 
 - Day01 - Day06 [**C++**](/cpp)
-- Day07 - [**Kotlin**](/kotlin) 
+- Day07 - Day08 [**Kotlin**](/kotlin) 
